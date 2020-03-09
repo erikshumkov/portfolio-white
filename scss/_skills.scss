@@ -1,0 +1,49 @@
+.skills {
+  padding: 100px 0;
+  .wrapper {
+    max-width: 1250px;
+    margin: 0 auto;
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 30% 1fr;
+      grid-gap: 70px;
+      .title {
+        justify-self: end;
+        h3 {
+          font-size: 16px;
+          text-transform: uppercase;
+          font-weight: 600;
+          color: #007bff;
+        }
+      }
+      .lists {
+        display: flex;
+        justify-content: space-between;
+        max-width: 630px;
+        p {
+          line-height: 24px;
+          margin-bottom: 20px;
+          color: #444452;
+        }
+        &-languages,
+        &-frameworks,
+        &-tools {
+          h3 {
+            color: #36363c;
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+          }
+          ul {
+            list-style-type: none;
+            li {
+              margin-bottom: 5px;
+              font-size: 14.5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

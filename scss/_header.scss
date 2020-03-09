@@ -1,0 +1,40 @@
+#home {
+  padding-top: 160px;
+  height: 100vh;
+  .wrapper {
+    max-width: 1250px;
+    margin: 0 auto;
+    .welcome {
+      margin-bottom: 70px;
+      h1 {
+        font-size: 40px;
+        font-weight: 400;
+        color: #444452;
+      }
+    }
+    .short-presentation {
+      margin-bottom: 60px;
+      p {
+        font-size: 40px;
+        font-weight: 300;
+        max-width: 675px;
+        line-height: 60px;
+        color: #444452;
+      }
+    }
+    .contact {
+      display: flex;
+      color: #444452;
+      p {
+        margin-right: 10px;
+        font-size: 20px;
+      }
+      a {
+        font-size: 20px;
+        color: #444452;
+        text-decoration: none;
+        border-bottom: 3px solid #007bff;
+      }
+    }
+  }
+}

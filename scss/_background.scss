@@ -1,0 +1,29 @@
+.background {
+  padding: 100px 0 105px;
+  .wrapper {
+    max-width: 1250px;
+    margin: 0 auto;
+    .background-grid {
+      display: grid;
+      grid-template-columns: 30% 1fr;
+      grid-gap: 70px;
+      .title {
+        justify-self: end;
+        h3 {
+          font-size: 16px;
+          text-transform: uppercase;
+          font-weight: 600;
+          color: #007bff;
+        }
+      }
+      .text {
+        max-width: 630px;
+        p {
+          line-height: 24px;
+          margin-bottom: 20px;
+          color: #444452;
+        }
+      }
+    }
+  }
+}

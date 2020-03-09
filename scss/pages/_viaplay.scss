@@ -1,0 +1,51 @@
+#viaplay-header {
+  .wrapper {
+    max-width: 1040px;
+    margin: 0 auto;
+    .image {
+      background: url('../img/viaplay.jpg') center no-repeat;
+      background-size: cover;
+      height: 585px;
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    .info {
+      h4 {
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      .info-text {
+        max-width: 900px;
+        margin: 0 auto;
+        p {
+          margin-bottom: 10px;
+        }
+      }
+    }
+    .action-buttons {
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+      padding: 0 0 100px 0;
+      a {
+        margin: 0 8px;
+        text-decoration: none;
+        padding: 7px 10px;
+        border: 1px solid #007bff;
+        border-radius: 4px;
+        color: #007bff;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 14px;
+        transition: 0.3s all ease;
+        &:hover {
+          background: #007bff;
+          color: #fff;
+        }
+      }
+    }
+  }
+}

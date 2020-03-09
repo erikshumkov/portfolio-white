@@ -1,0 +1,382 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif; }
+
+#home {
+  padding-top: 160px;
+  height: 100vh; }
+  #home .wrapper {
+    max-width: 1250px;
+    margin: 0 auto; }
+    #home .wrapper .welcome {
+      margin-bottom: 70px; }
+      #home .wrapper .welcome h1 {
+        font-size: 40px;
+        font-weight: 400;
+        color: #444452; }
+    #home .wrapper .short-presentation {
+      margin-bottom: 60px; }
+      #home .wrapper .short-presentation p {
+        font-size: 40px;
+        font-weight: 300;
+        max-width: 675px;
+        line-height: 60px;
+        color: #444452; }
+    #home .wrapper .contact {
+      display: flex;
+      color: #444452; }
+      #home .wrapper .contact p {
+        margin-right: 10px;
+        font-size: 20px; }
+      #home .wrapper .contact a {
+        font-size: 20px;
+        color: #444452;
+        text-decoration: none;
+        border-bottom: 3px solid #007bff; }
+
+.background {
+  padding: 100px 0 105px; }
+  .background .wrapper {
+    max-width: 1250px;
+    margin: 0 auto; }
+    .background .wrapper .background-grid {
+      display: grid;
+      grid-template-columns: 30% 1fr;
+      grid-gap: 70px; }
+      .background .wrapper .background-grid .title {
+        justify-self: end; }
+        .background .wrapper .background-grid .title h3 {
+          font-size: 16px;
+          text-transform: uppercase;
+          font-weight: 600;
+          color: #007bff; }
+      .background .wrapper .background-grid .text {
+        max-width: 630px; }
+        .background .wrapper .background-grid .text p {
+          line-height: 24px;
+          margin-bottom: 20px;
+          color: #444452; }
+
+.skills {
+  padding: 100px 0; }
+  .skills .wrapper {
+    max-width: 1250px;
+    margin: 0 auto; }
+    .skills .wrapper .skills-grid {
+      display: grid;
+      grid-template-columns: 30% 1fr;
+      grid-gap: 70px; }
+      .skills .wrapper .skills-grid .title {
+        justify-self: end; }
+        .skills .wrapper .skills-grid .title h3 {
+          font-size: 16px;
+          text-transform: uppercase;
+          font-weight: 600;
+          color: #007bff; }
+      .skills .wrapper .skills-grid .lists {
+        display: flex;
+        justify-content: space-between;
+        max-width: 630px; }
+        .skills .wrapper .skills-grid .lists p {
+          line-height: 24px;
+          margin-bottom: 20px;
+          color: #444452; }
+        .skills .wrapper .skills-grid .lists-languages h3, .skills .wrapper .skills-grid .lists-frameworks h3, .skills .wrapper .skills-grid .lists-tools h3 {
+          color: #36363c;
+          font-size: 16px;
+          font-weight: 700;
+          text-transform: uppercase;
+          margin-bottom: 5px; }
+        .skills .wrapper .skills-grid .lists-languages ul, .skills .wrapper .skills-grid .lists-frameworks ul, .skills .wrapper .skills-grid .lists-tools ul {
+          list-style-type: none; }
+          .skills .wrapper .skills-grid .lists-languages ul li, .skills .wrapper .skills-grid .lists-frameworks ul li, .skills .wrapper .skills-grid .lists-tools ul li {
+            margin-bottom: 5px;
+            font-size: 14.5px; }
+
+.projects {
+  padding: 150px 0 120px; }
+  .projects .wrapper {
+    max-width: 1250px;
+    margin: 0 auto; }
+    .projects .wrapper .projects-title {
+      padding-bottom: 70px; }
+      .projects .wrapper .projects-title h3 {
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #007bff;
+        text-align: center; }
+    .projects .wrapper .card-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap; }
+      .projects .wrapper .card-container .card {
+        cursor: pointer;
+        width: 350px;
+        height: 360px;
+        background: #fff;
+        margin-bottom: 40px;
+        box-shadow: 0px 4px 10px -5px rgba(0, 0, 0, 0.5);
+        transform: translateY(0);
+        transition: 0.3s all ease-in-out; }
+        .projects .wrapper .card-container .card:hover {
+          transform: translateY(-5px); }
+        .projects .wrapper .card-container .card .image {
+          height: 220px;
+          width: 100%; }
+        .projects .wrapper .card-container .card:nth-of-type(2) {
+          margin: 0 40px; }
+        .projects .wrapper .card-container .card .info {
+          padding: 30px;
+          text-align: center; }
+          .projects .wrapper .card-container .card .info h4 {
+            color: black;
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 3px;
+            text-transform: capitalize; }
+          .projects .wrapper .card-container .card .info p {
+            font-size: 15px;
+            color: grey;
+            margin-bottom: 10px; }
+          .projects .wrapper .card-container .card .info span {
+            text-decoration: none;
+            color: #007bff; }
+    .projects .wrapper .card-container2 {
+      display: flex; }
+      .projects .wrapper .card-container2 .card {
+        cursor: pointer;
+        width: 350px;
+        height: 360px;
+        background: #fff;
+        margin-bottom: 40px;
+        margin-left: 60px;
+        box-shadow: 0px 4px 10px -5px rgba(0, 0, 0, 0.5);
+        transform: translateY(0);
+        transition: 0.3s all ease-in-out; }
+        .projects .wrapper .card-container2 .card:hover {
+          transform: translateY(-5px); }
+        .projects .wrapper .card-container2 .card .image {
+          height: 220px;
+          width: 100%;
+          background: red; }
+        .projects .wrapper .card-container2 .card:nth-of-type(2) {
+          margin: 0 40px; }
+        .projects .wrapper .card-container2 .card .info {
+          padding: 30px;
+          text-align: center; }
+          .projects .wrapper .card-container2 .card .info h4 {
+            color: black;
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 3px;
+            text-transform: capitalize; }
+          .projects .wrapper .card-container2 .card .info p {
+            font-size: 15px;
+            color: grey;
+            margin-bottom: 10px; }
+          .projects .wrapper .card-container2 .card .info span {
+            text-decoration: none;
+            color: #007bff; }
+
+.card-link {
+  text-decoration: none; }
+
+#ecommerce-header .wrapper {
+  max-width: 1040px;
+  margin: 0 auto; }
+  #ecommerce-header .wrapper .image {
+    background: url("../img/ecommerce2.jpg") center no-repeat;
+    background-size: cover;
+    height: 585px;
+    width: 100%;
+    margin-bottom: 30px; }
+  #ecommerce-header .wrapper .info h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px; }
+  #ecommerce-header .wrapper .info .info-text {
+    max-width: 900px;
+    margin: 0 auto; }
+    #ecommerce-header .wrapper .info .info-text p {
+      margin-bottom: 10px; }
+  #ecommerce-header .wrapper .action-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 0 0 100px 0; }
+    #ecommerce-header .wrapper .action-buttons a {
+      margin: 0 8px;
+      text-decoration: none;
+      padding: 7px 10px;
+      border: 1px solid #007bff;
+      border-radius: 4px;
+      color: #007bff;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 14px;
+      transition: 0.3s all ease; }
+      #ecommerce-header .wrapper .action-buttons a:hover {
+        background: #007bff;
+        color: #fff; }
+
+#realestate-header .wrapper {
+  max-width: 1040px;
+  margin: 0 auto; }
+  #realestate-header .wrapper .image {
+    background: url("../img/realestate.jpg") center no-repeat;
+    background-size: cover;
+    height: 585px;
+    width: 100%;
+    margin-bottom: 30px; }
+  #realestate-header .wrapper .info h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px; }
+  #realestate-header .wrapper .info .info-text {
+    max-width: 900px;
+    margin: 0 auto; }
+    #realestate-header .wrapper .info .info-text p {
+      margin-bottom: 10px; }
+  #realestate-header .wrapper .action-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 0 0 100px 0; }
+    #realestate-header .wrapper .action-buttons a {
+      margin: 0 8px;
+      text-decoration: none;
+      padding: 7px 10px;
+      border: 1px solid #007bff;
+      border-radius: 4px;
+      color: #007bff;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 14px;
+      transition: 0.3s all ease; }
+      #realestate-header .wrapper .action-buttons a:hover {
+        background: #007bff;
+        color: #fff; }
+
+#viaplay-header .wrapper {
+  max-width: 1040px;
+  margin: 0 auto; }
+  #viaplay-header .wrapper .image {
+    background: url("../img/viaplay.jpg") center no-repeat;
+    background-size: cover;
+    height: 585px;
+    width: 100%;
+    margin-bottom: 30px; }
+  #viaplay-header .wrapper .info h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px; }
+  #viaplay-header .wrapper .info .info-text {
+    max-width: 900px;
+    margin: 0 auto; }
+    #viaplay-header .wrapper .info .info-text p {
+      margin-bottom: 10px; }
+  #viaplay-header .wrapper .action-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 0 0 100px 0; }
+    #viaplay-header .wrapper .action-buttons a {
+      margin: 0 8px;
+      text-decoration: none;
+      padding: 7px 10px;
+      border: 1px solid #007bff;
+      border-radius: 4px;
+      color: #007bff;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 14px;
+      transition: 0.3s all ease; }
+      #viaplay-header .wrapper .action-buttons a:hover {
+        background: #007bff;
+        color: #fff; }
+
+#weather-header .wrapper {
+  max-width: 1040px;
+  margin: 0 auto; }
+  #weather-header .wrapper .image {
+    background: url("../img/weather.jpg") center no-repeat;
+    background-size: cover;
+    height: 585px;
+    width: 100%;
+    margin-bottom: 30px; }
+  #weather-header .wrapper .info h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px; }
+  #weather-header .wrapper .info .info-text {
+    max-width: 900px;
+    margin: 0 auto; }
+    #weather-header .wrapper .info .info-text p {
+      margin-bottom: 10px; }
+  #weather-header .wrapper .action-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 0 0 100px 0; }
+    #weather-header .wrapper .action-buttons a {
+      margin: 0 8px;
+      text-decoration: none;
+      padding: 7px 10px;
+      border: 1px solid #007bff;
+      border-radius: 4px;
+      color: #007bff;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 14px;
+      transition: 0.3s all ease; }
+      #weather-header .wrapper .action-buttons a:hover {
+        background: #007bff;
+        color: #fff; }
+
+footer {
+  padding: 50px; }
+  footer .wrapper {
+    max-width: 1350px;
+    margin: auto; }
+  footer .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    footer .footer-grid .name h4 {
+      font-size: 16px;
+      font-weight: 600; }
+    footer .footer-grid .social {
+      justify-self: end; }
+      footer .footer-grid .social ul {
+        list-style-type: none; }
+        footer .footer-grid .social ul li {
+          display: inline-block;
+          font-size: 14.5px;
+          font-weight: 700;
+          margin-right: 30px;
+          text-transform: uppercase;
+          color: #007bff; }
+          footer .footer-grid .social ul li:nth-of-type(3) {
+            margin-right: 0; }
+          footer .footer-grid .social ul li a {
+            color: #007bff;
+            text-decoration: none;
+            border-bottom: 2px solid #fff;
+            padding-bottom: 0px;
+            transition: 0.3s all ease; }
+            footer .footer-grid .social ul li a:hover {
+              padding-bottom: 3px;
+              border-bottom: 2px solid #007bff; }
+
+/*# sourceMappingURL=style.css.map */
