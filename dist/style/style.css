@@ -194,36 +194,6 @@
     height: 585px;
     width: 100%;
     margin-bottom: 30px; }
-  #ecommerce-header .wrapper .info h4 {
-    font-size: 16px;
-    text-transform: uppercase;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 30px; }
-  #ecommerce-header .wrapper .info .info-text {
-    max-width: 900px;
-    margin: 0 auto; }
-    #ecommerce-header .wrapper .info .info-text p {
-      margin-bottom: 10px; }
-  #ecommerce-header .wrapper .action-buttons {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    padding: 0 0 100px 0; }
-    #ecommerce-header .wrapper .action-buttons a {
-      margin: 0 8px;
-      text-decoration: none;
-      padding: 7px 10px;
-      border: 1px solid #007bff;
-      border-radius: 4px;
-      color: #007bff;
-      text-transform: uppercase;
-      font-weight: 600;
-      font-size: 14px;
-      transition: 0.3s all ease; }
-      #ecommerce-header .wrapper .action-buttons a:hover {
-        background: #007bff;
-        color: #fff; }
 
 #realestate-header .wrapper {
   max-width: 1040px;
@@ -234,36 +204,6 @@
     height: 585px;
     width: 100%;
     margin-bottom: 30px; }
-  #realestate-header .wrapper .info h4 {
-    font-size: 16px;
-    text-transform: uppercase;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 30px; }
-  #realestate-header .wrapper .info .info-text {
-    max-width: 900px;
-    margin: 0 auto; }
-    #realestate-header .wrapper .info .info-text p {
-      margin-bottom: 10px; }
-  #realestate-header .wrapper .action-buttons {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    padding: 0 0 100px 0; }
-    #realestate-header .wrapper .action-buttons a {
-      margin: 0 8px;
-      text-decoration: none;
-      padding: 7px 10px;
-      border: 1px solid #007bff;
-      border-radius: 4px;
-      color: #007bff;
-      text-transform: uppercase;
-      font-weight: 600;
-      font-size: 14px;
-      transition: 0.3s all ease; }
-      #realestate-header .wrapper .action-buttons a:hover {
-        background: #007bff;
-        color: #fff; }
 
 #viaplay-header .wrapper {
   max-width: 1040px;
@@ -274,36 +214,6 @@
     height: 585px;
     width: 100%;
     margin-bottom: 30px; }
-  #viaplay-header .wrapper .info h4 {
-    font-size: 16px;
-    text-transform: uppercase;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 30px; }
-  #viaplay-header .wrapper .info .info-text {
-    max-width: 900px;
-    margin: 0 auto; }
-    #viaplay-header .wrapper .info .info-text p {
-      margin-bottom: 10px; }
-  #viaplay-header .wrapper .action-buttons {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    padding: 0 0 100px 0; }
-    #viaplay-header .wrapper .action-buttons a {
-      margin: 0 8px;
-      text-decoration: none;
-      padding: 7px 10px;
-      border: 1px solid #007bff;
-      border-radius: 4px;
-      color: #007bff;
-      text-transform: uppercase;
-      font-weight: 600;
-      font-size: 14px;
-      transition: 0.3s all ease; }
-      #viaplay-header .wrapper .action-buttons a:hover {
-        background: #007bff;
-        color: #fff; }
 
 #weather-header .wrapper {
   max-width: 1040px;
@@ -314,36 +224,6 @@
     height: 585px;
     width: 100%;
     margin-bottom: 30px; }
-  #weather-header .wrapper .info h4 {
-    font-size: 16px;
-    text-transform: uppercase;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 30px; }
-  #weather-header .wrapper .info .info-text {
-    max-width: 900px;
-    margin: 0 auto; }
-    #weather-header .wrapper .info .info-text p {
-      margin-bottom: 10px; }
-  #weather-header .wrapper .action-buttons {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    padding: 0 0 100px 0; }
-    #weather-header .wrapper .action-buttons a {
-      margin: 0 8px;
-      text-decoration: none;
-      padding: 7px 10px;
-      border: 1px solid #007bff;
-      border-radius: 4px;
-      color: #007bff;
-      text-transform: uppercase;
-      font-weight: 600;
-      font-size: 14px;
-      transition: 0.3s all ease; }
-      #weather-header .wrapper .action-buttons a:hover {
-        background: #007bff;
-        color: #fff; }
 
 footer {
   padding: 50px; }
@@ -378,5 +258,40 @@ footer {
             footer .footer-grid .social ul li a:hover {
               padding-bottom: 3px;
               border-bottom: 2px solid #007bff; }
+
+.info h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px; }
+
+.info-text {
+  font-size: 20px;
+  line-height: 1.8;
+  max-width: 900px;
+  margin: 0 auto; }
+  .info-text p {
+    margin-bottom: 10px; }
+
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  padding: 0 0 100px 0; }
+  .action-buttons a {
+    margin: 0 8px;
+    text-decoration: none;
+    padding: 10px 25px;
+    border: 1px solid #007bff;
+    border-radius: 4px;
+    color: #007bff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    transition: 0.3s all ease; }
+    .action-buttons a:hover {
+      background: #007bff;
+      color: #fff; }
 
 /*# sourceMappingURL=style.css.map */

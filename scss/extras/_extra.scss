@@ -1,0 +1,42 @@
+.info {
+  h4 {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+
+.info-text {
+  font-size: 20px;
+  line-height: 1.8;
+  max-width: 900px;
+  margin: 0 auto;
+  p {
+    margin-bottom: 10px;
+  }
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  padding: 0 0 100px 0;
+  a {
+    margin: 0 8px;
+    text-decoration: none;
+    padding: 10px 25px;
+    border: 1px solid #007bff;
+    border-radius: 4px;
+    color: #007bff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    transition: 0.3s all ease;
+    &:hover {
+      background: #007bff;
+      color: #fff;
+    }
+  }
+}
