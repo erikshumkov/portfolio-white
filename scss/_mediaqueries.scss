@@ -1,0 +1,92 @@
+@media (max-width: 500px) {
+  #home {
+    .wrapper {
+      max-width: 75%;
+      .welcome {
+        margin-bottom: 100px;
+        h1 {
+          font-size: 24px;
+        }
+      }
+      .short-presentation {
+        p {
+          font-size: 24px;
+          line-height: 36px;
+        }
+      }
+    }
+  }
+
+  .background {
+    .wrapper {
+      max-width: 75%;
+      .background-grid {
+        grid-template-columns: 1fr;
+        grid-gap: 35px;
+        .title {
+          justify-self: start;
+        }
+        .text {
+          p {
+            margin-bottom: 30px;
+          }
+        }
+      }
+    }
+  }
+
+  .skills {
+    .wrapper {
+      max-width: 75%;
+      .skills-grid {
+        grid-template-columns: 1fr;
+        grid-gap: 35px;
+        .title {
+          justify-self: start;
+        }
+        .lists {
+          flex-wrap: wrap;
+          .lists-tools {
+            margin-top: 30px;
+          }
+        }
+      }
+    }
+  }
+
+  .projects {
+    .wrapper {
+      max-width: 90%;
+      .projects-title {
+        padding-bottom: 40px;
+        h3 {
+          text-align: left;
+          margin-left: 20px;
+        }
+      }
+      .card-container {
+        .card:nth-of-type(2) {
+          margin: 0 0 40px 0;
+        }
+      }
+      .card-container2 {
+        .card {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  footer {
+    .footer-grid {
+      grid-template-columns: 1fr;
+      .name {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .social {
+        justify-self: center;
+      }
+    }
+  }
+}
