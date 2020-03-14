@@ -49,9 +49,10 @@
       .background .wrapper .background-grid .title {
         justify-self: end; }
         .background .wrapper .background-grid .title h3 {
-          font-size: 16px;
+          font-size: 17px;
           text-transform: uppercase;
           font-weight: 600;
+          letter-spacing: 2px;
           color: #007bff; }
       .background .wrapper .background-grid .text {
         max-width: 630px; }
@@ -72,9 +73,10 @@
       .skills .wrapper .skills-grid .title {
         justify-self: end; }
         .skills .wrapper .skills-grid .title h3 {
-          font-size: 16px;
+          font-size: 17px;
           text-transform: uppercase;
           font-weight: 600;
+          letter-spacing: 2px;
           color: #007bff; }
       .skills .wrapper .skills-grid .lists {
         display: flex;
@@ -104,9 +106,10 @@
     .projects .wrapper .projects-title {
       padding-bottom: 70px; }
       .projects .wrapper .projects-title h3 {
-        font-size: 16px;
+        font-size: 17px;
         text-transform: uppercase;
         font-weight: 600;
+        letter-spacing: 2px;
         color: #007bff;
         text-align: center; }
     .projects .wrapper .card-container {
@@ -293,5 +296,58 @@ footer {
     .action-buttons a:hover {
       background: #007bff;
       color: #fff; }
+
+@media (max-width: 500px) {
+  #home .wrapper {
+    max-width: 75%; }
+    #home .wrapper .welcome {
+      margin-bottom: 100px; }
+      #home .wrapper .welcome h1 {
+        font-size: 24px; }
+    #home .wrapper .short-presentation p {
+      font-size: 24px;
+      line-height: 36px; }
+
+  .background .wrapper {
+    max-width: 75%; }
+    .background .wrapper .background-grid {
+      grid-template-columns: 1fr;
+      grid-gap: 35px; }
+      .background .wrapper .background-grid .title {
+        justify-self: start; }
+      .background .wrapper .background-grid .text p {
+        margin-bottom: 30px; }
+
+  .skills .wrapper {
+    max-width: 75%; }
+    .skills .wrapper .skills-grid {
+      grid-template-columns: 1fr;
+      grid-gap: 35px; }
+      .skills .wrapper .skills-grid .title {
+        justify-self: start; }
+      .skills .wrapper .skills-grid .lists {
+        flex-wrap: wrap; }
+        .skills .wrapper .skills-grid .lists .lists-tools {
+          margin-top: 30px; }
+
+  .projects .wrapper {
+    max-width: 90%; }
+    .projects .wrapper .projects-title {
+      padding-bottom: 40px; }
+      .projects .wrapper .projects-title h3 {
+        text-align: left;
+        margin-left: 20px; }
+    .projects .wrapper .card-container .card:nth-of-type(2) {
+      margin: 0 0 40px 0; }
+    .projects .wrapper .card-container2 .card {
+      margin: 0; }
+
+  footer .footer-grid {
+    grid-template-columns: 1fr; }
+    footer .footer-grid .name {
+      text-align: center;
+      margin-bottom: 20px; }
+    footer .footer-grid .social {
+      justify-self: center; } }
 
 /*# sourceMappingURL=style.css.map */
