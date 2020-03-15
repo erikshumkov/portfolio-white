@@ -124,7 +124,7 @@
         margin-bottom: 40px;
         box-shadow: 0px 4px 10px -5px rgba(0, 0, 0, 0.5);
         transform: translateY(0);
-        transition: 0.3s all ease-in-out; }
+        transition: 0.3s transform ease-in-out; }
         .projects .wrapper .card-container .card:hover {
           transform: translateY(-5px); }
         .projects .wrapper .card-container .card .image {
@@ -132,6 +132,8 @@
           width: 100%; }
         .projects .wrapper .card-container .card:nth-of-type(2) {
           margin: 0 40px; }
+        .projects .wrapper .card-container .card:nth-of-type(4) {
+          display: none; }
         .projects .wrapper .card-container .card .info {
           padding: 30px;
           text-align: center; }
@@ -288,15 +290,84 @@ footer {
     padding: 10px 25px;
     border: 1px solid #007bff;
     border-radius: 4px;
-    color: #007bff;
+    background: #007bff;
+    color: #fff;
     text-transform: uppercase;
     font-weight: 600;
     font-size: 14px;
     transition: 0.3s all ease; }
     .action-buttons a:hover {
-      background: #007bff;
-      color: #fff; }
+      background: #0070e7; }
 
+@media (max-width: 768px) {
+  #home .wrapper {
+    max-width: 72%; }
+    #home .wrapper .welcome {
+      margin-bottom: 100px; }
+      #home .wrapper .welcome h1 {
+        font-size: 32px; }
+    #home .wrapper .short-presentation p {
+      font-size: 32px;
+      line-height: 48px; }
+
+  .background {
+    padding: 100px 0 0; }
+    .background .wrapper {
+      max-width: 72%; }
+      .background .wrapper .background-grid {
+        grid-template-columns: 1fr;
+        grid-gap: 35px; }
+        .background .wrapper .background-grid .title {
+          justify-self: start; }
+          .background .wrapper .background-grid .title h3 {
+            margin-left: -50px; }
+        .background .wrapper .background-grid .text p {
+          margin-bottom: 30px; }
+
+  .skills {
+    padding: 92px 0 0; }
+    .skills .wrapper {
+      max-width: 72%; }
+      .skills .wrapper .skills-grid {
+        grid-template-columns: 1fr;
+        grid-gap: 35px; }
+        .skills .wrapper .skills-grid .title {
+          justify-self: start; }
+          .skills .wrapper .skills-grid .title h3 {
+            margin-left: -50px; }
+
+  .projects {
+    padding-bottom: 65px; }
+    .projects .wrapper {
+      max-width: 100%; }
+      .projects .wrapper .projects-title {
+        padding-bottom: 40px; }
+        .projects .wrapper .projects-title h3 {
+          text-align: left;
+          padding-left: 55px; }
+      .projects .wrapper .card-container .card:nth-of-type(even) {
+        display: block;
+        margin: 0 0 40px 25px; }
+      .projects .wrapper .card-container2 {
+        display: none; }
+
+  #ecommerce-header .wrapper .image,
+  #realestate-header .wrapper .image,
+  #viaplay-header .wrapper .image,
+  #weather-header .wrapper .image {
+    height: 425px; }
+  #ecommerce-header .wrapper .info-text,
+  #realestate-header .wrapper .info-text,
+  #viaplay-header .wrapper .info-text,
+  #weather-header .wrapper .info-text {
+    width: 90%;
+    font-size: 16px; }
+  #ecommerce-header .wrapper .action-buttons,
+  #realestate-header .wrapper .action-buttons,
+  #viaplay-header .wrapper .action-buttons,
+  #weather-header .wrapper .action-buttons {
+    flex-wrap: wrap;
+    margin-top: 30px; } }
 @media (max-width: 500px) {
   #home .wrapper {
     max-width: 75%; }
@@ -315,6 +386,8 @@ footer {
       grid-gap: 35px; }
       .background .wrapper .background-grid .title {
         justify-self: start; }
+        .background .wrapper .background-grid .title h3 {
+          margin-left: -20px; }
       .background .wrapper .background-grid .text p {
         margin-bottom: 30px; }
 
@@ -325,6 +398,8 @@ footer {
       grid-gap: 35px; }
       .skills .wrapper .skills-grid .title {
         justify-self: start; }
+        .skills .wrapper .skills-grid .title h3 {
+          margin-left: -20px; }
       .skills .wrapper .skills-grid .lists {
         flex-wrap: wrap; }
         .skills .wrapper .skills-grid .lists .lists-tools {
@@ -336,11 +411,16 @@ footer {
       padding-bottom: 40px; }
       .projects .wrapper .projects-title h3 {
         text-align: left;
-        margin-left: 20px; }
+        padding-left: 0;
+        margin-left: 6px; }
     .projects .wrapper .card-container .card:nth-of-type(2) {
       margin: 0 0 40px 0; }
-    .projects .wrapper .card-container2 .card {
-      margin: 0; }
+    .projects .wrapper .card-container .card:nth-of-type(4) {
+      display: none; }
+    .projects .wrapper .card-container2 {
+      display: flex; }
+      .projects .wrapper .card-container2 .card {
+        margin: 0; }
 
   footer .footer-grid {
     grid-template-columns: 1fr; }
@@ -348,6 +428,35 @@ footer {
       text-align: center;
       margin-bottom: 20px; }
     footer .footer-grid .social {
-      justify-self: center; } }
+      justify-self: center; }
+
+  #ecommerce-header .wrapper .image,
+  #realestate-header .wrapper .image,
+  #viaplay-header .wrapper .image,
+  #weather-header .wrapper .image {
+    height: 225px; }
+  #ecommerce-header .wrapper .info-text,
+  #realestate-header .wrapper .info-text,
+  #viaplay-header .wrapper .info-text,
+  #weather-header .wrapper .info-text {
+    width: 90%;
+    font-size: 16px; }
+  #ecommerce-header .wrapper .action-buttons,
+  #realestate-header .wrapper .action-buttons,
+  #viaplay-header .wrapper .action-buttons,
+  #weather-header .wrapper .action-buttons {
+    flex-wrap: wrap;
+    margin-top: 30px; }
+    #ecommerce-header .wrapper .action-buttons a,
+    #realestate-header .wrapper .action-buttons a,
+    #viaplay-header .wrapper .action-buttons a,
+    #weather-header .wrapper .action-buttons a {
+      width: 100%;
+      text-align: center; }
+      #ecommerce-header .wrapper .action-buttons a:first-of-type,
+      #realestate-header .wrapper .action-buttons a:first-of-type,
+      #viaplay-header .wrapper .action-buttons a:first-of-type,
+      #weather-header .wrapper .action-buttons a:first-of-type {
+        margin-bottom: 10px; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -29,14 +29,14 @@
     padding: 10px 25px;
     border: 1px solid #007bff;
     border-radius: 4px;
-    color: #007bff;
+    background: #007bff;
+    color: #fff;
     text-transform: uppercase;
     font-weight: 600;
     font-size: 14px;
     transition: 0.3s all ease;
     &:hover {
-      background: #007bff;
-      color: #fff;
+      background: #0070e7;
     }
   }
 }
