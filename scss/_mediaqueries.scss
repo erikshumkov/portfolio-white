@@ -72,6 +72,9 @@
           display: block;
           margin: 0 0 40px 25px;
         }
+        .card:nth-of-type(5) {
+          margin: 0;
+        }
       }
       .card-container2 {
         display: none;
@@ -176,7 +179,13 @@
           margin: 0 0 40px 0;
         }
         .card:nth-of-type(4) {
-          display: none;
+          margin-left: 0;
+        }
+        .card:nth-of-type(5) {
+          margin-bottom: 40px;
+        }
+        .card:nth-of-type(6) {
+          margin-left: 0;
         }
       }
       .card-container2 {
@@ -204,7 +213,9 @@
   #ecommerce-header,
   #realestate-header,
   #viaplay-header,
-  #weather-header {
+  #weather-header,
+  #restaurant-header,
+  #pomodoro-header {
     .wrapper {
       .image {
         height: 225px;

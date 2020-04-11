@@ -132,8 +132,8 @@
           width: 100%; }
         .projects .wrapper .card-container .card:nth-of-type(2) {
           margin: 0 40px; }
-        .projects .wrapper .card-container .card:nth-of-type(4) {
-          display: none; }
+        .projects .wrapper .card-container .card:nth-of-type(5) {
+          margin: 0 40px; }
         .projects .wrapper .card-container .card .info {
           padding: 30px;
           text-align: center; }
@@ -186,6 +186,8 @@
           .projects .wrapper .card-container2 .card .info span {
             text-decoration: none;
             color: #007bff; }
+      .projects .wrapper .card-container2 .card:last-of-type {
+        margin-left: 0; }
 
 .card-link {
   text-decoration: none; }
@@ -210,6 +212,16 @@
     width: 100%;
     margin-bottom: 30px; }
 
+#restaurant-header .wrapper {
+  max-width: 1040px;
+  margin: 0 auto; }
+  #restaurant-header .wrapper .image {
+    background: url("../img/restaurant2.jpg") center no-repeat;
+    background-size: cover;
+    height: 585px;
+    width: 100%;
+    margin-bottom: 30px; }
+
 #viaplay-header .wrapper {
   max-width: 1040px;
   margin: 0 auto; }
@@ -224,7 +236,17 @@
   max-width: 1040px;
   margin: 0 auto; }
   #weather-header .wrapper .image {
-    background: url("../img/weather.jpg") center no-repeat;
+    background: url("../img/weather2.jpg") center no-repeat;
+    background-size: cover;
+    height: 585px;
+    width: 100%;
+    margin-bottom: 30px; }
+
+#pomodoro-header .wrapper {
+  max-width: 1040px;
+  margin: 0 auto; }
+  #pomodoro-header .wrapper .image {
+    background: url("../img/pomodoro2.jpg") center no-repeat;
     background-size: cover;
     height: 585px;
     width: 100%;
@@ -284,12 +306,27 @@ footer {
   justify-content: center;
   margin-top: 50px;
   padding: 0 0 100px 0; }
+  .action-buttons a:first-of-type {
+    margin: 0 8px;
+    text-decoration: none;
+    padding: 15px 25px;
+    border: 2px solid #0070e7;
+    border-radius: 35px;
+    background: #fff;
+    color: #007bff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    transition: 0.3s all ease; }
+    .action-buttons a:first-of-type:hover {
+      background: #0070e7;
+      color: #fff; }
   .action-buttons a {
     margin: 0 8px;
     text-decoration: none;
-    padding: 10px 25px;
+    padding: 15px 25px;
     border: 1px solid #007bff;
-    border-radius: 4px;
+    border-radius: 35px;
     background: #007bff;
     color: #fff;
     text-transform: uppercase;
@@ -348,6 +385,8 @@ footer {
       .projects .wrapper .card-container .card:nth-of-type(even) {
         display: block;
         margin: 0 0 40px 25px; }
+      .projects .wrapper .card-container .card:nth-of-type(5) {
+        margin: 0; }
       .projects .wrapper .card-container2 {
         display: none; }
 
@@ -416,7 +455,11 @@ footer {
     .projects .wrapper .card-container .card:nth-of-type(2) {
       margin: 0 0 40px 0; }
     .projects .wrapper .card-container .card:nth-of-type(4) {
-      display: none; }
+      margin-left: 0; }
+    .projects .wrapper .card-container .card:nth-of-type(5) {
+      margin-bottom: 40px; }
+    .projects .wrapper .card-container .card:nth-of-type(6) {
+      margin-left: 0; }
     .projects .wrapper .card-container2 {
       display: flex; }
       .projects .wrapper .card-container2 .card {
@@ -433,30 +476,40 @@ footer {
   #ecommerce-header .wrapper .image,
   #realestate-header .wrapper .image,
   #viaplay-header .wrapper .image,
-  #weather-header .wrapper .image {
+  #weather-header .wrapper .image,
+  #restaurant-header .wrapper .image,
+  #pomodoro-header .wrapper .image {
     height: 225px; }
   #ecommerce-header .wrapper .info-text,
   #realestate-header .wrapper .info-text,
   #viaplay-header .wrapper .info-text,
-  #weather-header .wrapper .info-text {
+  #weather-header .wrapper .info-text,
+  #restaurant-header .wrapper .info-text,
+  #pomodoro-header .wrapper .info-text {
     width: 90%;
     font-size: 16px; }
   #ecommerce-header .wrapper .action-buttons,
   #realestate-header .wrapper .action-buttons,
   #viaplay-header .wrapper .action-buttons,
-  #weather-header .wrapper .action-buttons {
+  #weather-header .wrapper .action-buttons,
+  #restaurant-header .wrapper .action-buttons,
+  #pomodoro-header .wrapper .action-buttons {
     flex-wrap: wrap;
     margin-top: 30px; }
     #ecommerce-header .wrapper .action-buttons a,
     #realestate-header .wrapper .action-buttons a,
     #viaplay-header .wrapper .action-buttons a,
-    #weather-header .wrapper .action-buttons a {
+    #weather-header .wrapper .action-buttons a,
+    #restaurant-header .wrapper .action-buttons a,
+    #pomodoro-header .wrapper .action-buttons a {
       width: 100%;
       text-align: center; }
       #ecommerce-header .wrapper .action-buttons a:first-of-type,
       #realestate-header .wrapper .action-buttons a:first-of-type,
       #viaplay-header .wrapper .action-buttons a:first-of-type,
-      #weather-header .wrapper .action-buttons a:first-of-type {
+      #weather-header .wrapper .action-buttons a:first-of-type,
+      #restaurant-header .wrapper .action-buttons a:first-of-type,
+      #pomodoro-header .wrapper .action-buttons a:first-of-type {
         margin-bottom: 10px; } }
 
 /*# sourceMappingURL=style.css.map */
