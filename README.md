@@ -1,5 +1,5 @@
 # Portfolio Website
 
-Added my current best work the website
+Added my current best work to the website
 
 Check it out
