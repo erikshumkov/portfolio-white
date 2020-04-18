@@ -1,0 +1,136 @@
+.show {
+  display: grid;
+  grid-template-columns: 30% 1fr;
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 150px 0 0px;
+  .title {
+    justify-self: end;
+    h3 {
+      font-size: 17px;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 2px;
+      color: #007bff;
+    }
+  }
+  .single-project {
+    display: flex;
+    margin-bottom: 60px;
+    .image-container {
+      position: relative;
+      width: 657px;
+      height: 386px;
+      a {
+        outline: 0;
+      }
+      img {
+        z-index: 2;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      img:nth-of-type(2) {
+        z-index: 1;
+        position: absolute;
+        width: 420px;
+        height: 260px;
+        left: 122px;
+        top: 24px;
+      }
+    }
+    .text-container {
+      font-family: sans-serif;
+      width: 12%;
+      a {
+        text-decoration: none;
+        color: #000;
+        outline: 0;
+        h3 {
+          color: black;
+          font-size: 15px;
+          font-weight: 600;
+          margin-bottom: 3px;
+          text-transform: capitalize;
+        }
+        p {
+          margin-top: 10px;
+          line-height: 1.5;
+          font-size: 14px;
+          font-weight: lighter;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .show {
+    grid-template-columns: 1fr;
+    grid-gap: 35px;
+    max-width: 72%;
+    .title {
+      justify-self: initial;
+      margin-left: -20px;
+    }
+    .projects2 {
+      .single-project {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-bottom: 20px;
+        .image-container {
+          justify-self: center;
+          width: 600px;
+          height: 453px;
+          img:nth-of-type(2) {
+            width: 410px;
+            height: 245px;
+            left: 96px;
+            top: 67px;
+          }
+        }
+        .text-container {
+          margin-top: -60px;
+          margin-left: 20px;
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .show {
+    grid-template-columns: 1fr;
+    grid-gap: 35px;
+    max-width: 75%;
+    .title {
+      justify-self: initial;
+      margin-left: -20px;
+    }
+    .projects2 {
+      .single-project {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-bottom: 20px;
+        .image-container {
+          justify-self: center;
+          width: 271px;
+          height: 214px;
+          img:nth-of-type(2) {
+            width: 184px;
+            height: 116px;
+            left: 44px;
+            top: 32px;
+          }
+        }
+        .text-container {
+          margin-top: -10px;
+          margin-left: 20px;
+          width: 50%;
+        }
+      }
+    }
+  }
+}

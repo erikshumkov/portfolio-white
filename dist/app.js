@@ -6,30 +6,54 @@ window.sr = ScrollReveal({
 
 sr.reveal('.background');
 sr.reveal(".skills");
-sr.reveal(".projects", { duration: 900, easing: "ease", viewFactor: 0.3 });
+sr.reveal(".show", { duration: 900, easing: "ease", viewFactor: 0.1 });
+
+// function pageTransition() {
+
+//   var tl = gsap.timeline();
+
+//   tl.to("ul.transition li", { duration: .5, scaleY: 1, transformOrigin: "bottom left", stagger: .2 })
+//   tl.to("ul.transition li", { duration: .5, scaleY: 0, transformOrigin: "bottom left", stagger: .1, delay: .1 })
+// }
+
+// function contentAnimation() {
+
+//   console.log("123");
+
+// }
+
+// function delay(n) {
+//   n = n || 2000;
+//   return new Promise(done => {
+//     setTimeout(() => {
+//       done();
+//     }, n)
+//   });
+// }
 
 // barba.init({
-//   views: [
-//     {
-//       namespace: "home"
+
+//   sync: true,
+
+//   transitions: [{
+
+//     async leave(data) {
+
+//       const done = this.async();
+
+//       pageTransition();
+//       await delay(1500);
+//       done();
 //     },
-//     {
-//       namespace: "ecommerce"
+
+//     async enter(data) {
+//       contentAnimation();
+//     },
+
+//     async once(data) {
+//       contentAnimation();
 //     }
-//   ],
-//   transitions: [
-//     {
-//       leave({ current, next }) {
-//         let done = this.async();
-//         window.scrollTo(0, 0);
-//         const tl = gsap.timeline({ defaults: { ease: "power2.inOut" } });
-//         tl.fromTo(current.container, 1, { opacity: 1 }, { opacity: 0, onComplete: done });
-//       },
-//       enter({ current, next }) {
-//         let done = this.async();
-//         const tl = gsap.timeline({ defaults: { ease: "power2.inOut" } });
-//         tl.fromTo(next.container, 1, { opacity: 0 }, { opacity: 1, onComplete: done });
-//       }
-//     }
-//   ]
+
+//   }]
+
 // });
