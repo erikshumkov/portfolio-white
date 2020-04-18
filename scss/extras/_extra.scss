@@ -27,7 +27,7 @@
     margin: 0 8px;
     text-decoration: none;
     padding: 15px 25px;
-    border: 2px solid #0070e7;
+    border: 2px solid #007bff;
     border-radius: 35px;
     background: #fff;
     color: #007bff;
@@ -36,7 +36,7 @@
     font-size: 14px;
     transition: 0.3s all ease;
     &:hover {
-      background: #0070e7;
+      background: #007bff;
       color: #fff;
     }
   }
@@ -56,4 +56,45 @@
       background: #0070e7;
     }
   }
+}
+
+// Custom scrollbar
+body::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+body::-webkit-scrollbar {
+  width: 4px;
+  background-color: #fff;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #868686;
+}
+
+#ecommerce-header {
+  position: relative;
+}
+
+// Go back btn
+.back-btn {
+  position: fixed;
+  top: 3%;
+  left: 3%;
+  margin: 0 8px;
+  text-decoration: none;
+  padding: 15px 25px;
+  border-radius: 35px;
+  background: rgb(99, 114, 246);
+  background: linear-gradient(
+    144deg,
+    rgba(99, 114, 246, 1) 0%,
+    rgba(93, 180, 249, 1) 50%,
+    rgba(90, 213, 251, 1) 100%
+  );
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+  transition: 0.3s all ease;
 }
