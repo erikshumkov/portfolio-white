@@ -8,52 +8,10 @@ sr.reveal('.background');
 sr.reveal(".skills");
 sr.reveal(".show", { duration: 900, easing: "ease", viewFactor: 0.1 });
 
-// function pageTransition() {
+// gsap.to(".overlay", { x: "100%", duration: .5, delay: 1.3 });
+// gsap.to(".overlay", { display: "none", delay: 2.8 });
 
-//   var tl = gsap.timeline();
+// gsap.to(".loader-show", { x: "100%", delay: .5, duration: .8 })
 
-//   tl.to("ul.transition li", { duration: .5, scaleY: 1, transformOrigin: "bottom left", stagger: .2 })
-//   tl.to("ul.transition li", { duration: .5, scaleY: 0, transformOrigin: "bottom left", stagger: .1, delay: .1 })
-// }
-
-// function contentAnimation() {
-
-//   console.log("123");
-
-// }
-
-// function delay(n) {
-//   n = n || 2000;
-//   return new Promise(done => {
-//     setTimeout(() => {
-//       done();
-//     }, n)
-//   });
-// }
-
-// barba.init({
-
-//   sync: true,
-
-//   transitions: [{
-
-//     async leave(data) {
-
-//       const done = this.async();
-
-//       pageTransition();
-//       await delay(1500);
-//       done();
-//     },
-
-//     async enter(data) {
-//       contentAnimation();
-//     },
-
-//     async once(data) {
-//       contentAnimation();
-//     }
-
-//   }]
-
-// });
+// const body = document.querySelector("body");
+// setTimeout(() => body.style.overflowY = "initial", 2000);

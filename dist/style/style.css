@@ -15,17 +15,32 @@
     #home .wrapper .welcome {
       margin-bottom: 70px; }
       #home .wrapper .welcome h1 {
+        position: relative;
         font-size: 40px;
         font-weight: 400;
         color: #444452; }
+        #home .wrapper .welcome h1 .reveal {
+          position: absolute;
+          top: 0;
+          left: -20px;
+          width: 10%;
+          height: 100%; }
     #home .wrapper .short-presentation {
       margin-bottom: 60px; }
       #home .wrapper .short-presentation p {
+        overflow: hidden;
+        position: relative;
         font-size: 40px;
         font-weight: 300;
         max-width: 675px;
         line-height: 60px;
         color: #444452; }
+        #home .wrapper .short-presentation p .reveal {
+          position: absolute;
+          top: 0;
+          left: -20px;
+          width: 100%;
+          height: 100%; }
     #home .wrapper .contact {
       display: flex;
       color: #444452; }
@@ -168,7 +183,7 @@
           font-size: 14px;
           font-weight: lighter; }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .show {
     grid-template-columns: 1fr;
     grid-gap: 35px;
@@ -366,7 +381,7 @@
   max-width: 1040px;
   margin: 0 auto; }
   #pomodoro-header .wrapper .image {
-    background: url("../img/pomodoro2.jpg") center no-repeat;
+    background: url("../img/pomodoro3.jpg") center no-repeat;
     background-size: cover;
     height: 585px;
     width: 100%;
@@ -406,12 +421,13 @@ footer {
               padding-bottom: 3px;
               border-bottom: 2px solid #007bff; }
 
-.info h4 {
-  font-size: 20px;
-  text-transform: uppercase;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 30px; }
+.info-title {
+  padding-top: 100px; }
+  .info-title h4 {
+    font-size: 40px;
+    text-transform: lowercase;
+    font-weight: 800;
+    margin-bottom: 30px; }
 
 .info-text {
   font-size: 20px;
@@ -421,11 +437,13 @@ footer {
   .info-text p {
     margin-bottom: 10px; }
 
+.info {
+  padding-bottom: 100px; }
+
 .action-buttons {
   display: flex;
-  justify-content: center;
   margin-top: 50px;
-  padding: 0 0 100px 0; }
+  padding: 0 0 30px 0; }
   .action-buttons a:first-of-type {
     margin: 0 8px;
     text-decoration: none;
@@ -435,8 +453,8 @@ footer {
     background: #fff;
     color: #007bff;
     text-transform: uppercase;
-    font-weight: 600;
-    font-size: 14px;
+    font-weight: 800;
+    font-size: 13px;
     transition: 0.3s all ease; }
     .action-buttons a:first-of-type:hover {
       background: #007bff;
@@ -450,8 +468,8 @@ footer {
     background: #007bff;
     color: #fff;
     text-transform: uppercase;
-    font-weight: 600;
-    font-size: 14px;
+    font-weight: 800;
+    font-size: 13px;
     transition: 0.3s all ease; }
     .action-buttons a:hover {
       background: #0070e7; }
@@ -466,7 +484,12 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
   background-color: #868686; }
 
-#ecommerce-header {
+#ecommerce-header .wrapper,
+#realestate-header .wrapper,
+#restaurant-header .wrapper,
+#weather-header .wrapper,
+#viaplay-header .wrapper,
+#pomodoro-header .wrapper {
   position: relative; }
 
 .back-btn {
@@ -484,6 +507,49 @@ body::-webkit-scrollbar-thumb {
   font-weight: 600;
   font-size: 14px;
   transition: 0.3s all ease; }
+
+.next-btn {
+  position: fixed;
+  top: 50%;
+  right: 3%;
+  margin: 0 8px;
+  text-decoration: none;
+  padding: 15px 25px;
+  border-radius: 35px;
+  background: #6372f6;
+  background: linear-gradient(144deg, #6372f6 0%, #5db4f9 50%, #5ad5fb 100%);
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+  transition: 0.3s all ease; }
+
+.overlay {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 10;
+  background: #222222;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh; }
+  .overlay .loader-container {
+    overflow: hidden; }
+    .overlay .loader-container .loader {
+      position: relative;
+      width: 300px;
+      height: 1.6px;
+      background: #fd1717;
+      z-index: 11; }
+    .overlay .loader-container .loader-show {
+      position: absolute;
+      top: 0;
+      width: 300px;
+      height: 1.6px;
+      background: #5e1919;
+      z-index: 12; }
 
 @media (max-width: 768px) {
   #home .wrapper {
@@ -660,5 +726,8 @@ body::-webkit-scrollbar-thumb {
       #restaurant-header .wrapper .action-buttons a:first-of-type,
       #pomodoro-header .wrapper .action-buttons a:first-of-type {
         margin-bottom: 10px; } }
+body {
+  position: relative;
+  overflow-x: hidden; }
 
 /*# sourceMappingURL=style.css.map */

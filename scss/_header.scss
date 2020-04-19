@@ -8,19 +8,38 @@
     .welcome {
       margin-bottom: 70px;
       h1 {
+        position: relative;
         font-size: 40px;
         font-weight: 400;
         color: #444452;
+        .reveal {
+          position: absolute;
+          top: 0;
+          left: -20px;
+          // background: #fff;
+          width: 10%;
+          height: 100%;
+        }
       }
     }
     .short-presentation {
       margin-bottom: 60px;
       p {
+        overflow: hidden;
+        position: relative;
         font-size: 40px;
         font-weight: 300;
         max-width: 675px;
         line-height: 60px;
         color: #444452;
+        .reveal {
+          position: absolute;
+          top: 0;
+          left: -20px;
+          // background: #fff;
+          width: 100%;
+          height: 100%;
+        }
       }
     }
     .contact {

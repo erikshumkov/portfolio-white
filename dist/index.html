@@ -8,16 +8,26 @@
     <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
+    <div class="overlay">
+      <div class="loader-container">
+        <div class="loader">
+          <div class="loader-show"></div>
+        </div>
+      </div>
+    </div>
     <header id="home">
       <div class="wrapper">
         <div class="welcome">
-          <h1>Hej! 🙂</h1>
+          <h1>Hej!<span class="reveal"></span></h1>
         </div>
         <div class="short-presentation">
           <p>
-            Jag heter <strong>Erik</strong>, jag är en front-end utvecklare som
-            bygger moderna hemsidor.
+            Jag heter <strong>Erik</strong>, jag är en front-end<span
+              class="reveal"
+            ></span>
           </p>
+          <p>utvecklare som bygger moderna<span class="reveal"></span></p>
+          <p>hemsidor.<span class="reveal"></span></p>
         </div>
       </div>
       <!-- <div class="object">
@@ -117,7 +127,7 @@
                   HTML<br />
                   SCSS<br />
                   React<br />
-                  React Router
+                  SPA
                 </p>
               </a>
             </div>
@@ -138,8 +148,8 @@
                   HTML<br />
                   SCSS<br />
                   React<br />
-                  React Router<br />
-                  Leaflet.js
+                  Leaflet.js<br />
+                  SPA
                 </p>
               </a>
             </div>
@@ -193,7 +203,7 @@
             <div class="image-container">
               <a class="project-link" href="./pages/pomodoro.html">
                 <img src="./img/macbook2.png" alt="macbook" />
-                <img src="./img/pomodoro.jpg" alt="Pomodoro Timer image" />
+                <img src="./img/pomodoro3.jpg" alt="Pomodoro Timer image" />
               </a>
             </div>
             <div class="text-container">
@@ -257,11 +267,11 @@
         </div>
       </div>
     </footer>
-    <!-- <script src="https://unpkg.com/@barba/core"></script>
+    <!-- <script src="https://unpkg.com/@barba/core"></script> -->
     <script
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"
-    ></script> -->
+    ></script>
     <script src="app.js"></script>
   </body>
 </html>
