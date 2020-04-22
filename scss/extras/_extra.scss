@@ -93,43 +93,84 @@ body::-webkit-scrollbar-thumb {
   left: 3%;
   margin: 0 8px;
   text-decoration: none;
-  padding: 15px 25px;
-  border-radius: 35px;
-  background: rgb(99, 114, 246);
-  background: linear-gradient(
-    144deg,
-    rgba(99, 114, 246, 1) 0%,
-    rgba(93, 180, 249, 1) 50%,
-    rgba(90, 213, 251, 1) 100%
-  );
-  color: #fff;
-  text-transform: uppercase;
+  padding: 5px 40px 5px;
+  border-radius: 50%;
+  // background: rgb(99, 114, 246);
+  // background: linear-gradient(
+  //   144deg,
+  //   rgba(99, 114, 246, 1) 0%,
+  //   rgba(93, 180, 249, 1) 50%,
+  //   rgba(90, 213, 251, 1) 100%
+  // );
+  color: #000;
   font-weight: 600;
-  font-size: 14px;
-  transition: 0.3s all ease;
+  font-size: 20px;
+  &::after {
+    transition: 0.4s all ease;
+    content: 'Home';
+    position: absolute;
+    font-size: 13px;
+    font-weight: 400;
+    color: #000;
+    opacity: 0;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &:hover::after {
+    opacity: 1;
+  }
 }
 
 // Next project button
-.next-btn {
+.next-btn,
+.prev-btn {
   position: fixed;
-  top: 50%;
-  right: 3%;
+  top: 1.8%;
+  right: 7%;
   margin: 0 8px;
   text-decoration: none;
   padding: 15px 25px;
   border-radius: 35px;
-  background: rgb(99, 114, 246);
-  background: linear-gradient(
-    144deg,
-    rgba(99, 114, 246, 1) 0%,
-    rgba(93, 180, 249, 1) 50%,
-    rgba(90, 213, 251, 1) 100%
-  );
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 14px;
+  color: black;
+  font-weight: 800;
+  font-size: 20px;
   transition: 0.3s all ease;
+}
+
+.prev-btn {
+  right: 11%;
+  &::after {
+    transition: 0.4s all ease;
+    content: 'Previous';
+    position: absolute;
+    font-size: 13px;
+    font-weight: 400;
+    opacity: 0;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &:hover::after {
+    opacity: 1;
+  }
+}
+
+.next-btn {
+  &::after {
+    transition: 0.4s all ease;
+    content: 'Next';
+    position: absolute;
+    font-size: 13px;
+    font-weight: 400;
+    opacity: 0;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &:hover::after {
+    opacity: 1;
+  }
 }
 
 // Intro overlay
