@@ -134,3 +134,11 @@
     }
   }
 }
+
+img:nth-of-type(2) {
+  transition: 0.8s all ease;
+}
+
+.project-link:hover img:nth-of-type(2) {
+  transform: rotate(-0.5deg) scale(1.02);
+}

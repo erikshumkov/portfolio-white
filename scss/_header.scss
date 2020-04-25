@@ -31,12 +31,14 @@
       p {
         overflow: hidden;
         position: relative;
-        font-size: 40px;
+        font-family: 'Source Serif Pro', serif;
+        font-size: 30px;
         font-weight: 400;
         max-width: 675px;
-        line-height: 60px;
-        color: rgb(90, 90, 90);
+        line-height: 40px;
+        color: #000;
         strong {
+          font-family: 'Source Serif Pro', serif;
           color: rgb(15, 15, 15);
         }
         .reveal {

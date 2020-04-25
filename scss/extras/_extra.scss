@@ -2,7 +2,7 @@
   padding-top: 100px;
   h4 {
     font-size: 40px;
-    text-transform: lowercase;
+    text-transform: capitalize;
     font-weight: 800;
     margin-bottom: 30px;
   }
@@ -95,16 +95,9 @@ body::-webkit-scrollbar-thumb {
   text-decoration: none;
   padding: 5px 40px 5px;
   border-radius: 50%;
-  // background: rgb(99, 114, 246);
-  // background: linear-gradient(
-  //   144deg,
-  //   rgba(99, 114, 246, 1) 0%,
-  //   rgba(93, 180, 249, 1) 50%,
-  //   rgba(90, 213, 251, 1) 100%
-  // );
   color: #000;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 25px;
   &::after {
     transition: 0.4s all ease;
     content: 'Home';
@@ -134,7 +127,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 35px;
   color: black;
   font-weight: 800;
-  font-size: 20px;
+  font-size: 25px;
   transition: 0.3s all ease;
 }
 
@@ -203,5 +196,23 @@ body::-webkit-scrollbar-thumb {
       background: rgb(201, 201, 201);
       z-index: 12;
     }
+  }
+}
+
+// Scroll to see more at project pages
+.scrollmore {
+  position: fixed;
+  bottom: 15%;
+  left: 4%;
+  transform: rotate(-90deg);
+  text-transform: uppercase;
+  font-size: 13px;
+  pointer-events: none;
+  span {
+    position: absolute;
+    left: -35%;
+    bottom: -1.5px;
+    margin-right: 15px;
+    font-size: 20px;
   }
 }
