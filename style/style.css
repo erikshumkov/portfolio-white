@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600,700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -35,12 +36,14 @@
       #home .wrapper .short-presentation p {
         overflow: hidden;
         position: relative;
-        font-size: 40px;
+        font-family: 'Source Serif Pro', serif;
+        font-size: 30px;
         font-weight: 400;
         max-width: 675px;
-        line-height: 60px;
-        color: #5a5a5a; }
+        line-height: 40px;
+        color: #000; }
         #home .wrapper .short-presentation p strong {
+          font-family: 'Source Serif Pro', serif;
           color: #0f0f0f; }
         #home .wrapper .short-presentation p .reveal {
           position: absolute;
@@ -240,6 +243,12 @@
         margin-top: -10px;
         margin-left: 20px;
         width: 50%; } }
+img:nth-of-type(2) {
+  transition: 0.8s all ease; }
+
+.project-link:hover img:nth-of-type(2) {
+  transform: rotate(-0.5deg) scale(1.02); }
+
 .projects {
   padding: 150px 0 120px; }
   .projects .wrapper {
@@ -432,7 +441,7 @@ footer {
   padding-top: 100px; }
   .info-title h4 {
     font-size: 40px;
-    text-transform: lowercase;
+    text-transform: capitalize;
     font-weight: 800;
     margin-bottom: 30px; }
 
@@ -509,7 +518,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 50%;
   color: #000;
   font-weight: 600;
-  font-size: 20px; }
+  font-size: 25px; }
   .back-btn::after {
     transition: 0.4s all ease;
     content: 'Home';
@@ -535,7 +544,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 35px;
   color: black;
   font-weight: 800;
-  font-size: 20px;
+  font-size: 25px;
   transition: 0.3s all ease; }
 
 .prev-btn {
@@ -593,6 +602,21 @@ body::-webkit-scrollbar-thumb {
       height: 1.6px;
       background: #c9c9c9;
       z-index: 12; }
+
+.scrollmore {
+  position: fixed;
+  bottom: 15%;
+  left: 4%;
+  transform: rotate(-90deg);
+  text-transform: uppercase;
+  font-size: 13px;
+  pointer-events: none; }
+  .scrollmore span {
+    position: absolute;
+    left: -35%;
+    bottom: -1.5px;
+    margin-right: 15px;
+    font-size: 20px; }
 
 @media (max-width: 768px) {
   #home .wrapper {
