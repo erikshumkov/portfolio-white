@@ -3,11 +3,12 @@
     max-width: 1040px;
     margin: 0 auto;
     .image {
-      background: url('../img/viaplay.jpg') center no-repeat;
       background-size: cover;
-      height: 585px;
       width: 100%;
       margin-bottom: 30px;
+      img {
+        max-width: 100%;
+      }
     }
   }
 }

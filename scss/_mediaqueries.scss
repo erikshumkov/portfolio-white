@@ -86,9 +86,6 @@
   #viaplay-header,
   #weather-header {
     .wrapper {
-      .image {
-        height: 425px;
-      }
       .info-text {
         width: 90%;
         font-size: 16px;
@@ -96,6 +93,16 @@
       .action-buttons {
         flex-wrap: wrap;
         margin-top: 30px;
+      }
+      .video {
+        top: 274px;
+      }
+    }
+  }
+  #realestate-header {
+    .wrapper {
+      .video {
+        top: 266px;
       }
     }
   }
@@ -217,8 +224,11 @@
   #restaurant-header,
   #pomodoro-header {
     .wrapper {
-      .image {
-        height: 225px;
+      .info-title {
+        h4 {
+          font-size: 28px;
+          text-align: center;
+        }
       }
       .info-text {
         width: 90%;
@@ -234,6 +244,17 @@
           width: 100%;
           text-align: center;
         }
+      }
+      .video {
+        top: 313px;
+      }
+    }
+  }
+  #realestate-header,
+  #restaurant-header {
+    .wrapper {
+      .video {
+        top: 309px;
       }
     }
   }

@@ -3,11 +3,24 @@
     max-width: 1040px;
     margin: 0 auto;
     .image {
-      background: url('../img/ecommerce2.jpg') center no-repeat;
+      position: relative;
       background-size: cover;
-      height: 585px;
       width: 100%;
       margin-bottom: 30px;
+      img {
+        max-width: 100%;
+      }
+    }
+    .video {
+      position: absolute;
+      top: 298px;
+      left: 0;
+      width: 100%;
+      video {
+        width: 100% !important;
+        height: auto !important;
+        outline: 0;
+      }
     }
   }
 }
