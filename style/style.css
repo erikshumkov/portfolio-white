@@ -153,6 +153,7 @@
       letter-spacing: 2px;
       color: #007bff; }
   .show .single-project {
+    position: relative;
     display: flex;
     margin-bottom: 60px; }
     .show .single-project .image-container {
@@ -162,7 +163,7 @@
       .show .single-project .image-container a {
         outline: 0; }
       .show .single-project .image-container img {
-        z-index: 2;
+        z-index: 6;
         position: relative;
         width: 100%;
         height: 100%;
@@ -174,6 +175,19 @@
         height: 260px;
         left: 122px;
         top: 24px; }
+      .show .single-project .image-container .project-overlay {
+        position: absolute;
+        z-index: 5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: black;
+        border-radius: 25px;
+        top: 14px;
+        left: 110px;
+        width: 430px;
+        height: 284px;
+        opacity: 0; }
     .show .single-project .text-container {
       font-family: sans-serif;
       width: 12%; }
@@ -214,6 +228,12 @@
           height: 245px;
           left: 96px;
           top: 67px; }
+        .show .projects2 .single-project .image-container .project-overlay {
+          border-radius: 10px;
+          top: 67px;
+          left: 95px;
+          width: 410px;
+          height: 245px; }
       .show .projects2 .single-project .text-container {
         margin-top: -60px;
         margin-left: 20px;
@@ -239,15 +259,33 @@
           height: 116px;
           left: 44px;
           top: 32px; }
+        .show .projects2 .single-project .image-container .project-overlay {
+          border-radius: 0;
+          top: 32px;
+          left: 44px;
+          width: 184px;
+          height: 116px; }
       .show .projects2 .single-project .text-container {
         margin-top: -10px;
         margin-left: 20px;
         width: 50%; } }
-img:nth-of-type(2) {
-  transition: 0.8s all ease; }
+.project-overlay {
+  transition: 0.3s all ease; }
 
-.project-link:hover img:nth-of-type(2) {
-  transform: rotate(-0.5deg) scale(1.02); }
+.image-container .project-link:hover .project-overlay {
+  opacity: 1; }
+
+.follower {
+  position: absolute;
+  z-index: 101;
+  visibility: hidden;
+  background: #000;
+  color: #fff;
+  font-family: 'Source Serif Pro', sans-serif;
+  border-radius: 35px;
+  padding: 10px 20px;
+  user-select: none;
+  -webkit-user-select: none; }
 
 .projects {
   padding: 150px 0 120px; }
@@ -347,61 +385,89 @@ img:nth-of-type(2) {
   max-width: 1040px;
   margin: 0 auto; }
   #ecommerce-header .wrapper .image {
-    background: url("../img/ecommerce2.jpg") center no-repeat;
+    position: relative;
     background-size: cover;
-    height: 585px;
     width: 100%;
     margin-bottom: 30px; }
+    #ecommerce-header .wrapper .image img {
+      max-width: 100%; }
+  #ecommerce-header .wrapper .video {
+    position: absolute;
+    top: 298px;
+    left: 0;
+    width: 100%; }
+    #ecommerce-header .wrapper .video video {
+      width: 100% !important;
+      height: auto !important;
+      outline: 0; }
 
 #realestate-header .wrapper {
   max-width: 1040px;
   margin: 0 auto; }
   #realestate-header .wrapper .image {
-    background: url("../img/realestate1.jpg") center no-repeat;
     background-size: cover;
-    height: 585px;
     width: 100%;
     margin-bottom: 30px; }
+    #realestate-header .wrapper .image img {
+      max-width: 100%; }
+  #realestate-header .wrapper .video {
+    position: absolute;
+    top: 286px;
+    left: 0;
+    width: 100%; }
+    #realestate-header .wrapper .video video {
+      width: 100% !important;
+      height: auto !important;
+      outline: 0; }
 
 #restaurant-header .wrapper {
   max-width: 1040px;
   margin: 0 auto; }
   #restaurant-header .wrapper .image {
-    background: url("../img/restaurant2.jpg") center no-repeat;
     background-size: cover;
-    height: 585px;
     width: 100%;
     margin-bottom: 30px; }
+    #restaurant-header .wrapper .image img {
+      max-width: 100%; }
+  #restaurant-header .wrapper .video {
+    position: absolute;
+    top: 286px;
+    left: 0;
+    width: 100%; }
+    #restaurant-header .wrapper .video video {
+      width: 100% !important;
+      height: auto !important;
+      outline: 0; }
 
 #viaplay-header .wrapper {
   max-width: 1040px;
   margin: 0 auto; }
   #viaplay-header .wrapper .image {
-    background: url("../img/viaplay.jpg") center no-repeat;
     background-size: cover;
-    height: 585px;
     width: 100%;
     margin-bottom: 30px; }
+    #viaplay-header .wrapper .image img {
+      max-width: 100%; }
 
 #weather-header .wrapper {
   max-width: 1040px;
   margin: 0 auto; }
   #weather-header .wrapper .image {
-    background: url("../img/weather2.jpg") center no-repeat;
     background-size: cover;
-    height: 585px;
     width: 100%;
     margin-bottom: 30px; }
+    #weather-header .wrapper .image img {
+      max-width: 100%; }
 
 #pomodoro-header .wrapper {
   max-width: 1040px;
   margin: 0 auto; }
   #pomodoro-header .wrapper .image {
-    background: url("../img/pomodoro3.jpg") center no-repeat;
     background-size: cover;
-    height: 585px;
     width: 100%;
     margin-bottom: 30px; }
+    #pomodoro-header .wrapper .image img {
+      max-width: 100%; }
 
 footer {
   padding: 50px; }
@@ -690,11 +756,6 @@ body::-webkit-scrollbar-thumb {
       .projects .wrapper .card-container2 {
         display: none; }
 
-  #ecommerce-header .wrapper .image,
-  #realestate-header .wrapper .image,
-  #viaplay-header .wrapper .image,
-  #weather-header .wrapper .image {
-    height: 425px; }
   #ecommerce-header .wrapper .info-text,
   #realestate-header .wrapper .info-text,
   #viaplay-header .wrapper .info-text,
@@ -706,7 +767,15 @@ body::-webkit-scrollbar-thumb {
   #viaplay-header .wrapper .action-buttons,
   #weather-header .wrapper .action-buttons {
     flex-wrap: wrap;
-    margin-top: 30px; } }
+    margin-top: 30px; }
+  #ecommerce-header .wrapper .video,
+  #realestate-header .wrapper .video,
+  #viaplay-header .wrapper .video,
+  #weather-header .wrapper .video {
+    top: 274px; }
+
+  #realestate-header .wrapper .video {
+    top: 266px; } }
 @media (max-width: 500px) {
   #home .wrapper {
     max-width: 75%; }
@@ -773,13 +842,14 @@ body::-webkit-scrollbar-thumb {
     footer .footer-grid .social {
       justify-self: center; }
 
-  #ecommerce-header .wrapper .image,
-  #realestate-header .wrapper .image,
-  #viaplay-header .wrapper .image,
-  #weather-header .wrapper .image,
-  #restaurant-header .wrapper .image,
-  #pomodoro-header .wrapper .image {
-    height: 225px; }
+  #ecommerce-header .wrapper .info-title h4,
+  #realestate-header .wrapper .info-title h4,
+  #viaplay-header .wrapper .info-title h4,
+  #weather-header .wrapper .info-title h4,
+  #restaurant-header .wrapper .info-title h4,
+  #pomodoro-header .wrapper .info-title h4 {
+    font-size: 28px;
+    text-align: center; }
   #ecommerce-header .wrapper .info-text,
   #realestate-header .wrapper .info-text,
   #viaplay-header .wrapper .info-text,
@@ -810,7 +880,18 @@ body::-webkit-scrollbar-thumb {
       #weather-header .wrapper .action-buttons a:first-of-type,
       #restaurant-header .wrapper .action-buttons a:first-of-type,
       #pomodoro-header .wrapper .action-buttons a:first-of-type {
-        margin-bottom: 10px; } }
+        margin-bottom: 10px; }
+  #ecommerce-header .wrapper .video,
+  #realestate-header .wrapper .video,
+  #viaplay-header .wrapper .video,
+  #weather-header .wrapper .video,
+  #restaurant-header .wrapper .video,
+  #pomodoro-header .wrapper .video {
+    top: 313px; }
+
+  #realestate-header .wrapper .video,
+  #restaurant-header .wrapper .video {
+    top: 309px; } }
 body {
   position: relative;
   overflow-x: hidden; }
