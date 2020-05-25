@@ -1,5 +1,5 @@
 
-if (window.location.href.indexOf("index") > -1) {
+if (window.location.href.indexOf("pages") === -1) {
   // Get follower div
   const follower = document.getElementById("follower");
   // Get project links
