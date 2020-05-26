@@ -97,6 +97,12 @@
       .video {
         top: 274px;
       }
+      .info-header {
+        width: 90%;
+      }
+      .info-technologies {
+        width: 90%;
+      }
     }
   }
   #realestate-header {
@@ -120,7 +126,7 @@
       }
       .short-presentation {
         p {
-          font-size: 24px;
+          font-size: 18px;
           line-height: 36px;
         }
       }
@@ -230,6 +236,9 @@
           text-align: center;
         }
       }
+      .info-header {
+        width: 90%;
+      }
       .info-text {
         width: 90%;
         font-size: 16px;
@@ -248,6 +257,21 @@
       .video {
         top: 313px;
       }
+      .info-technologies {
+        width: 90%;
+      }
+    }
+    .back-btn {
+      left: 0;
+    }
+    .next-btn {
+      right: 0;
+    }
+    .prev-btn {
+      right: 20%;
+    }
+    .scrollmore {
+      display: none;
     }
   }
   #realestate-header,
