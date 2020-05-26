@@ -773,6 +773,16 @@ body::-webkit-scrollbar-thumb {
   #viaplay-header .wrapper .video,
   #weather-header .wrapper .video {
     top: 274px; }
+  #ecommerce-header .wrapper .info-header,
+  #realestate-header .wrapper .info-header,
+  #viaplay-header .wrapper .info-header,
+  #weather-header .wrapper .info-header {
+    width: 90%; }
+  #ecommerce-header .wrapper .info-technologies,
+  #realestate-header .wrapper .info-technologies,
+  #viaplay-header .wrapper .info-technologies,
+  #weather-header .wrapper .info-technologies {
+    width: 90%; }
 
   #realestate-header .wrapper .video {
     top: 266px; } }
@@ -784,7 +794,7 @@ body::-webkit-scrollbar-thumb {
       #home .wrapper .welcome h1 {
         font-size: 24px; }
     #home .wrapper .short-presentation p {
-      font-size: 24px;
+      font-size: 18px;
       line-height: 36px; }
 
   .background .wrapper {
@@ -850,6 +860,13 @@ body::-webkit-scrollbar-thumb {
   #pomodoro-header .wrapper .info-title h4 {
     font-size: 28px;
     text-align: center; }
+  #ecommerce-header .wrapper .info-header,
+  #realestate-header .wrapper .info-header,
+  #viaplay-header .wrapper .info-header,
+  #weather-header .wrapper .info-header,
+  #restaurant-header .wrapper .info-header,
+  #pomodoro-header .wrapper .info-header {
+    width: 90%; }
   #ecommerce-header .wrapper .info-text,
   #realestate-header .wrapper .info-text,
   #viaplay-header .wrapper .info-text,
@@ -888,6 +905,41 @@ body::-webkit-scrollbar-thumb {
   #restaurant-header .wrapper .video,
   #pomodoro-header .wrapper .video {
     top: 313px; }
+  #ecommerce-header .wrapper .info-technologies,
+  #realestate-header .wrapper .info-technologies,
+  #viaplay-header .wrapper .info-technologies,
+  #weather-header .wrapper .info-technologies,
+  #restaurant-header .wrapper .info-technologies,
+  #pomodoro-header .wrapper .info-technologies {
+    width: 90%; }
+  #ecommerce-header .back-btn,
+  #realestate-header .back-btn,
+  #viaplay-header .back-btn,
+  #weather-header .back-btn,
+  #restaurant-header .back-btn,
+  #pomodoro-header .back-btn {
+    left: 0; }
+  #ecommerce-header .next-btn,
+  #realestate-header .next-btn,
+  #viaplay-header .next-btn,
+  #weather-header .next-btn,
+  #restaurant-header .next-btn,
+  #pomodoro-header .next-btn {
+    right: 0; }
+  #ecommerce-header .prev-btn,
+  #realestate-header .prev-btn,
+  #viaplay-header .prev-btn,
+  #weather-header .prev-btn,
+  #restaurant-header .prev-btn,
+  #pomodoro-header .prev-btn {
+    right: 20%; }
+  #ecommerce-header .scrollmore,
+  #realestate-header .scrollmore,
+  #viaplay-header .scrollmore,
+  #weather-header .scrollmore,
+  #restaurant-header .scrollmore,
+  #pomodoro-header .scrollmore {
+    display: none; }
 
   #realestate-header .wrapper .video,
   #restaurant-header .wrapper .video {
