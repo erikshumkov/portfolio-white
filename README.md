@@ -1,5 +1,3 @@
 # Portfolio Website
 
-Added my current best work to the website
-
-Check it out
+HTML, SCSS, JavaScript, GSAP, scrollreveal
