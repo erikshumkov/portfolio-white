@@ -8,29 +8,21 @@
     <link rel="stylesheet" href="../style/style.css" />
   </head>
   <body>
-    <header id="restaurant-header">
+    <header id="weather-header">
       <div class="wrapper">
         <div class="info-title">
-          <h4>Restaurant Website</h4>
+          <h4>Race List</h4>
         </div>
         <div class="action-buttons">
-          <a href="https://erikshumkov.github.io/restaurant/" target="_blank"
+          <a href="http://ocrlopp.se/" target="_blank"
             >Visa hemsidan</a
           >
-          <a href="https://github.com/erikshumkov/restaurant" target="_blank"
+          <a href="https://github.com/erikshumkov/ocrlopp" target="_blank"
             >visa github repo</a
           >
         </div>
         <div class="image">
-          <img src="../img/restaurant2.jpg" alt="Restaurant project image" />
-        </div>
-        <div class="video">
-          <video autoplay muted loop controls>
-            <source
-              src="https://res.cloudinary.com/duckpx7as/video/upload/v1590483538/portfolio-videos/crestvid_bxqv9e.mp4"
-              type="video/mp4"
-            />
-          </video>
+          <img src="../img/ocr.jpg" alt="Race list project image" />
         </div>
         <div class="info">
           <div class="info-header">
@@ -38,37 +30,34 @@
           </div>
           <div class="info-text">
             <p>
-              Utmaning: Bygga en landing page för en restaurang från grunden.
+              Utmaningen: Göra en samling av kommande OCR (Obstacle Course Racing) lopp, så man inte behöver besöka flera hemsidor för att ta reda på loppen.
             </p>
             <p>
-              Lösning: Hämtade inspiration från flera ställen. Sidan är byggd
-              med moderna CSS tekniker som Grid och Flexbox. Funktionaliteten är
-              gjord i vanilla JavaScript.
+              Lösningen: Skrev ett litet script i Node.js som "skrapar" datan från flera sidor och som sparar den i en json fil som jag sedan la in i applikationen. Byggde även en sökfunktion som filtrerar efter titel och stad för att slippa gå igenom hela listan om listan skulle vara flera 100 lopp t.ex.
             </p>
             <p>
-              Resultat: En hemsida som kan anpassas till en restaurang beroende
-              på vad dom serverar, t.ex sushi eller thailändsk restaurang.
+              Resultatet: Istället för skriva ner alla kommande lopp för hand så använder jag kraften av Node.js att göra det grova jobbet. 
             </p>
           </div>
           <div class="info-technologies">
             <h2>Teknologier</h2>
             <ul>
-              <li>HTML5</li>
-              <li>SASS</li>
+              <li>Node.js</li>
+              <li>Web Scraping</li>
               <li>Javascript ES6</li>
-              <li>GSAP animations</li>
+              <li>SCSS</li>
+              <li>HTML5</li>
             </ul>
           </div>
         </div>
       </div>
       <a class="back-btn" href="../index.html#project">&#8592;</a>
-      <a class="next-btn" href="./pomodoro.html">&#8594;</a>
-      <a class="prev-btn" href="./race.html">&#8592;</a>
+      <a class="next-btn" href="./restaurant.html">&#8594;</a>
+      <a class="prev-btn" href="./books.html">&#8592;</a>
       <p class="scrollmore">
         <span class="downarr">&#8592;</span>scroll to read
       </p>
     </header>
-
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
     <!-- <script
       src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"

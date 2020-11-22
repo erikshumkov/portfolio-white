@@ -72,10 +72,10 @@ if (window.location.href.indexOf("pages") > -1) {
   const showPage = document.querySelector(".action-buttons a");
 
   // Add hover effect to the link button
-  showPage.addEventListener("mouseover", function (e) {
-    gsap.to(showPage, { scale: 0.5, duration: 0.1 });
-    gsap.to(showPage, { scale: 1, duration: 0.1, delay: 0.1 });
-  });
+  // showPage.addEventListener("mouseover", function (e) {
+  //   gsap.to(showPage, { scale: 0.5, duration: 0.1 });
+  //   gsap.to(showPage, { scale: 1, duration: 0.1, delay: 0.1 });
+  // });
 
   // Project page, the downarrow under the description text
   // add infinite animation to that arrow.
